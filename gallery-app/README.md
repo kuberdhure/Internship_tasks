@@ -49,6 +49,12 @@ A minimal yet powerful React Native app that showcases recent and searched image
 git clone git@github.com:your-username/gallery-app.git
 cd gallery-app
 
+### 2. Install Dependencies
+bash
+Copy
+Edit
+
+### 3. Run the App
 npm install
 # or
 yarn install
