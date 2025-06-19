@@ -29,8 +29,8 @@ const SearchScreen = () => {
       setPhotos(res.data.photos.photo);
     } catch (err) {
       console.error(err);
-      setSnackVisible(false); // Force reset
-      setTimeout(() => setSnackVisible(true), 100); // Show again after delay
+      setSnackVisible(false); 
+      setTimeout(() => setSnackVisible(true), 100);
     } finally {
       setLoading(false);
     }

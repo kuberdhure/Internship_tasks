@@ -37,11 +37,10 @@ const HomeScreen = () => {
         setPhotos((prev) => [...prev, ...newPhotos]);
       }
 
-      // Update `hasMore` properly using API's total pages
+      
       setHasMore(pageNumber < totalPages);
       setPage(pageNumber);
 
-      // Save merged data to cache
       const cached = await AsyncStorage.getItem('cachedPhotos');
       const parsedCache = cached ? JSON.parse(cached) : [];
 
