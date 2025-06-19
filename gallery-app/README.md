@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# 📸 Flickr Gallery App (React Native)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A minimal yet powerful React Native app that showcases recent and searched images from Flickr. Built for internship evaluation — with features like image caching, pagination, search, offline view, and modal image previews.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+- 🖼️ **Image Gallery** (Home)
+  - Shows recent Flickr images via API.
+  - Supports infinite scrolling with pagination.
+  - Tap an image to view full-size in a modal.
 
-2. Start the app
+- 📥 **Offline Caching**
+  - Caches image URLs and displays them offline.
+  - Smart re-fetch only if API response changes.
 
-   ```bash
-   npx expo start
-   ```
+- 🔍 **Search Functionality**
+  - Search for images using keywords (e.g., cats, dogs).
+  - Uses a separate screen with built-in navigator.
+  - Includes Snackbar with retry on failure.
 
-In the output, you'll find options to open the app in a
+- 🌙 **Dark Theme**
+  - Consistent dark-themed UI for better aesthetics.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- 📱 **Built with React Native**
+  - Fully responsive for mobile devices.
+  - Uses `react-navigation` (Drawer Navigator).
+  - `react-native-paper` for Snackbar alerts.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🔧 Tech Stack
 
-When you're ready, run:
+- **React Native**
+- **Flickr API**
+- **AsyncStorage** for caching
+- **Axios** for HTTP requests
+- **React Navigation** (Drawer + Modal)
+- **react-native-paper** for UI components
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
 
 ```bash
-npm run reset-project
-```
+git clone git@github.com:your-username/gallery-app.git
+cd gallery-app
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+npm install
+# or
+yarn install
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npx react-native run-android
+# or for iOS (requires macOS + Xcode)
+npx react-native run-ios
