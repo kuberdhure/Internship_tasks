@@ -95,7 +95,7 @@ const HomeScreen = () => {
                 <View style={styles.imageBox}>
                   <TouchableOpacity
                     activeOpacity={0.9}
-                    style={{ flex: 1 }} // 🔥 This makes it expand fully and let image be visible
+                    style={{ flex: 1 }}
                     onPress={() => {
                       setSelectedImage(item.url_l);
                       setModalVisible(true);

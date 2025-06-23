@@ -7,7 +7,7 @@ export default function AboutScreen() {
 
     return (
         <View style={styles.container}>
-            <Text style={[styles.title, { color: colors.text }]}>📱 SnapFlick</Text>
+            <Text style={[styles.title, { color: colors.text }]}>SnapFlick</Text>
             <Text style={[styles.title, { color: colors.text }]}>Version 1.0.0</Text>
             <Text style={[styles.title, { color: colors.text },{ marginTop: 10 }]}>
                 Built with ❤️ using React Native and the Flickr API by Mr.K

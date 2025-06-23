@@ -13,12 +13,12 @@ import {
 } from '../screens';
 import { View, Text, StyleSheet } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { useTheme } from '@react-navigation/native'; // 🟢 Theme
+import { useTheme } from '@react-navigation/native'; 
 
 const Drawer = createDrawerNavigator();
 
 function CustomDrawerContent(props) {
-  const { colors } = useTheme(); // 🟢 Get theme colors
+  const { colors } = useTheme();
 
   return (
     <DrawerContentScrollView {...props}>
